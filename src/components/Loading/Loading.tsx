@@ -1,4 +1,9 @@
-const Loading = ({ text }) => {
+import {FC} from "react"
+interface Props{
+  text:string;
+}
+
+const Loading:FC<Props> = ({ text }) => {
   return (
     <h1
       style={{

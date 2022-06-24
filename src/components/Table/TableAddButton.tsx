@@ -1,5 +1,11 @@
-import { IoMdAddCircle } from "react-icons/io";
-const TableAddButton = ({ onClick }) => {
+import { IoMdAddCircle } from "react-icons/io"
+import { FC } from "react"
+
+interface Props {
+  onClick: () => void
+}
+
+const TableAddButton: FC<Props> = ({ onClick }) => {
   return (
     <IoMdAddCircle
       onClick={onClick}
@@ -7,10 +13,10 @@ const TableAddButton = ({ onClick }) => {
       style={{
         position: "absolute",
         color: "#6BD425",
-        cursor: "pointer",
+        cursor: "pointer"
       }}
     />
-  );
-};
+  )
+}
 
-export default TableAddButton;
+export default TableAddButton

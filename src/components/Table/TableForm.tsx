@@ -1,9 +1,9 @@
-import { FC } from "react";
-interface Props{
-    children:any
+import { FC } from "react"
+interface Props {
+  children: React.ReactNode
 }
-const TableForm:FC<Props> = ({children}) => {
-    return <tr style={{position:'relative'}}>{children}</tr>
+const TableForm: FC<Props> = ({ children }) => {
+  return <tr style={{ position: "relative" }}>{children}</tr>
 }
 
-export default TableForm;
+export default TableForm

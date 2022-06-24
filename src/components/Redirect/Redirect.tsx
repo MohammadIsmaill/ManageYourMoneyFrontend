@@ -1,7 +1,11 @@
-import { useEffect } from "react";
+import { useEffect ,FC} from "react";
 import { useNavigate } from "react-router-dom";
 
-const Redirect = ({path}) => {
+interface Props{
+    path:string;
+}
+
+const Redirect:FC<Props> = ({path}) => {
     const navigate = useNavigate()
 
     useEffect(()=>{

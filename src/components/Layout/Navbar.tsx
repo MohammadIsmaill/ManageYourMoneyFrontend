@@ -39,8 +39,8 @@ const Navbar: FC = () => {
         <Choose>
           <When condition={bigWindowSize()}>
             <NavbarContainer>
-                <NavbarLink text={"Earnings"} route={"/earnings"} className={"text-earnings"}/>
-                <NavbarLink text={"Payments"} route={"/payments"} className={"text-payments"}/>
+                <NavbarLink text={"Earnings"} route={"/earnings"} className={"text-earnings1"}/>
+                <NavbarLink text={"Payments"} route={"/payments"} className={"text-payments1"}/>
                 <NavbarLink text={"Debts"} route={"/debts"} className={"text-debts1"} />
                 <NavbarLink text={"Analytics"} route ={"/analytics"} className={"text-analytics"}/>
                 <li className='m-2 text-xl cursor-pointer'>

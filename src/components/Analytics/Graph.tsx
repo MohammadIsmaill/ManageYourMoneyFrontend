@@ -13,7 +13,7 @@ import {
 const Line = ({ series, categories }) => {
   return (
     <>
-    <div style={{width:"100%" , maxWidth:"1000px",overflowX:"scroll"}}>
+    <div className="chart-container" style={{width:"100%" , maxWidth:"1000px",overflowX:"scroll"}}>
       
       
      

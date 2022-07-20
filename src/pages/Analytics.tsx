@@ -1,7 +1,7 @@
 import Line from "../components/Analytics/Graph"
 import { useEffect, useState } from "react"
 import paymentAPI from "../api/paymentApi"
-import * as notify from "../utils/notify"
+import * as notify from "../lib/notify"
 import { COLORS } from "../colors"
 import { errorMessage } from "../utils/errorMessage"
 import earningAPI from "../api/earningApi"

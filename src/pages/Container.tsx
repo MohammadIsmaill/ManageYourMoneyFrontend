@@ -2,7 +2,7 @@ import Navbar from "../components/Layout/Navbar";
 import { getCurrentComponent } from "../utils/pathUtils";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppSelector } from "../app/hooks";
-import * as notify from "../utils/notify"
+import * as notify from "../lib/notify"
 import { useEffect } from "react";
 
 const CurrentComponent = ({path}) => {

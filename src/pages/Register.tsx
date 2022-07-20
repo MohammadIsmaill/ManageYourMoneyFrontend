@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../app/hooks";
 import Logo from "../components/Logo/Logo";
 import Link from "../components/Link/Link";
 import { register, reset } from "../features/user/userSlice";
-import * as notify from "../utils/notify"
+import * as notify from "../lib/notify"
 const Register = () =>{
 
     const dispatch = useAppDispatch()

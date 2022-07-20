@@ -15,7 +15,7 @@ import TableHeader from "../components/Table/TableHeader"
 import TableInput from "../components/Table/TableInput"
 import TableRows from "../components/Table/TableRows"
 import { errorMessage } from "../utils/errorMessage"
-import * as notify from "../utils/notify"
+import * as notify from "../lib/notify"
 
 const Payments = () => {
   const [data, setData] = useState([])

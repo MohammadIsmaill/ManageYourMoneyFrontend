@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import debtAPI from "../api/debtApi"
-import * as notify from "../utils/notify"
+import * as notify from "../lib/notify"
 import TableRows from "../components/Table/TableRows"
 import TableForm from "../components/Table/TableForm"
 import TableInput from "../components/Table/TableInput"

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Link from "../components/Link/Link";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 import { login, reset } from "../features/user/userSlice";
-import * as notify from "../utils/notify"
+import * as notify from "../lib/notify"
 import Logo from "../components/Logo/Logo";
 const Login = () =>{
 

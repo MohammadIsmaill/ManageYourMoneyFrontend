@@ -297,3 +297,30 @@ table {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
+
+
+.button{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+ 
+  color:#fff;
+  border:none;
+  outline:none;
+  cursor: pointer;
+  font-size:15px;
+}
+
+.add-button{
+  background:#254441;
+}
+.remove-button{
+  background:#D81E5B;
+}
+
+
+.button:hover{
+  opacity: 0.9;
+}

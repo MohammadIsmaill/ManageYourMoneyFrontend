@@ -55,6 +55,7 @@ const Earnings = () => {
       if (formValidated()) {
         setLoading(true)
         await earningAPI.createEarning({ name, price, date })
+        clearTableInput()
         notify.success("Earning created successfully")
       } else {
         notify.error("Please fill all the inputs!")
@@ -63,7 +64,7 @@ const Earnings = () => {
       notify.error(errorMessage(error))
     } finally {
       setLoading(false)
-      clearTableInput()
+      
       getEarnings()
     }
   }

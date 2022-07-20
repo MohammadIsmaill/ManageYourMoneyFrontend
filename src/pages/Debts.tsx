@@ -55,6 +55,7 @@ const Debts = () => {
       if (formValidated) {
         setLoading(true)
         await debtAPI.createDebt({ name, price, date })
+        clearTableInput()
         notify.success("Debt created succesfully")
       } else {
         notify.error("Please fill all the inputs!")
@@ -63,7 +64,7 @@ const Debts = () => {
       notify.error(errorMessage(error))
     } finally {
       setLoading(false)
-      clearTableInput()
+      
       getDebts()
     }
   }

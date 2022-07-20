@@ -55,8 +55,9 @@ const Payments = () => {
       if (formValidated()) {
         setLoading(true)
         await paymentAPI.createPayment({ name, price, date })
-        notify.success("Payment created successfully")
         clearTableInput()
+        notify.success("Payment created successfully")
+        
       } else {
         notify.error("Please fill all the inputs!")
       }

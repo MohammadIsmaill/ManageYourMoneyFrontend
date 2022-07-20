@@ -12,11 +12,15 @@ import {
 
 const Line = ({ series, categories }) => {
   return (
-    <div
-      className='flex align-items-center justify-content-center'
-      style={{ height: "60vh" }}
-    >
-      <Chart pannable zoomable style={{ height: 350, width: 900 }}>
+    <>
+    <div style={{width:"100%" , maxWidth:"1000px",overflowX:"scroll"}}>
+      
+      
+     
+  
+
+      
+      <Chart pannable zoomable style={{ height: "60vh", width:"1000px" }}>
         <ChartTitle text='Money Graph' />
         <ChartLegend position='top' orientation='horizontal' />
         <ChartValueAxis>
@@ -42,7 +46,8 @@ const Line = ({ series, categories }) => {
           ))}
         </ChartSeries>
       </Chart>
-    </div>
+      </div>
+    </>
   )
 }
 

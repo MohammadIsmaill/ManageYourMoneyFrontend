@@ -320,7 +320,14 @@ table {
   background:#D81E5B;
 }
 
-
 .button:hover{
   opacity: 0.9;
+}
+
+.overflow-auto{
+  overflow-x:scroll !important;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }

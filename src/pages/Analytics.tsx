@@ -186,7 +186,7 @@ const Analytics = () => {
           <option value='2040'>2040</option>
         </select>
       </div>
-
+      
       <Choose>
         <When condition={!loading}>
           <Line series={series} categories={categories} />

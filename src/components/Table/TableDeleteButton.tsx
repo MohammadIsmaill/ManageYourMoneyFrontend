@@ -13,7 +13,7 @@ const TableDeleteButton: FC<Props> = ({ onClick, id }) => {
     //   style={{ color: "#EC0B43", position: "absolute", cursor: "pointer" }}
     // />
     <td style={{position:"relative"}}>
- <button className="button remove-button">
+    <button className="button remove-button" onClick={() => onClick(id)}>
       Delete
     </button>
     </td>

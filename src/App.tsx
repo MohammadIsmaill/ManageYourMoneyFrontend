@@ -9,6 +9,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Container from "./pages/Container";
 import './index.css';
 import Redirect from "./components/Redirect/Redirect";
+import Test from "./pages/Test";
 function App() {
   
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
           <Route path="*"  element={<PageNotFound/>}/>
           <Route path="/" element={<Redirect path={"/login"}/>} />
+          <Route path="/loaderio-f3eb9382f65019c5666e707f05f9703a" element={<Test/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/register' element = {<Register/>}/>
           <Route path ='/debts' element = {<Container/>} />
